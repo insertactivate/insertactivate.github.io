@@ -1,0 +1,18 @@
+.content {
+	max-width: 900px;
+	margin: auto;
+	background: white;
+	padding: 30px 20px 20px 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logotype {
+	text-align: center;	
+}
+
+img.logotype {
+	width: 40%;
+	min-width: 260px;
+	border: 0px;
+	padding: 0px 0px 15px 0px;
+}
