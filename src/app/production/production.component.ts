@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-production',
-  imports: [],
+  imports: [ FooterComponent ],
   templateUrl: './production.component.html',
   styleUrl: './production.component.css'
 })
