@@ -51,8 +51,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 4,
-    product: 'Kökssoffa Malin i lackerad fur',
-    description: 'Kökssoffa Malin tillverkas i lackerad fur (se bild), syrabetsad fur, samt vitlackerad björk.',
+    product: 'Kökssoffa Malin i lackerad fur / UTGÅTT UR SORTIMENTET',
+    description: 'Kökssoffa Malin tillverkades i lackerad fur (se bild), syrabetsad fur, samt vitlackerad björk.',
     details: 'Längd 162 cm / 200 cm (bäddbar), sitthöjd 47 cm, djup 55 cm.',
     images: [
       {
@@ -63,8 +63,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 5,
-    product: 'Kökssoffa Dalsjö i syrabetsad fur',
-    description: 'Kökssoffa Dalsjö tillverkas i lackerad fur samt syrabetsad fur (se bild).',
+    product: 'Kökssoffa Dalsjö i syrabetsad fur / UTGÅTT UR SORTIMENTET',
+    description: 'Kökssoffa Dalsjö tillverkades i lackerad fur samt syrabetsad fur (se bild).',
     details: 'Längd 180 cm / 215 cm, sitthöjd 45 cm, djup 55 cm.',
     images: [
       {

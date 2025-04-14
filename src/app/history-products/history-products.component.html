@@ -1,0 +1,26 @@
+<h2>
+  Historik
+</h2>
+<p>
+  Produkter som utgått ur sortimentet.
+</p>
+
+@if (historyProducts && historyProducts.length)
+{
+  @for (product of historyProducts; track product)
+  {
+    <div class="product">
+      <a routerLink="/history/products/{{ product.id }}">
+        <img src="{{ product.images[0].path }}">
+      </a>
+    </div>
+  }
+}
+@else
+{
+  <p>
+    Produktlistan tom.
+  </p>  
+}
+
+<app-footer></app-footer>

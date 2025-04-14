@@ -1,0 +1,35 @@
+@if (historyProduct)
+{
+  <div>
+    <h2>
+      {{ historyProduct.product }}
+    </h2>
+
+    <p>
+      {{ historyProduct.description }}
+    </p>
+
+    @for (image of historyProduct.images; track image)
+    {
+      <div class="product">
+        <img src="{{ image.path }}">
+        <p>
+          {{ image.description }}
+        </p>
+      </div>
+    }
+
+    <p>
+      {{ historyProduct.details }}
+    </p>
+  </div>
+}
+@else
+{
+  <div>
+    <h2></h2>
+    Produktinformation saknas.
+  </div>
+}
+
+<app-footer></app-footer>
