@@ -5,8 +5,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { PublicProductsComponent } from './public-products/public-products.component';
 import { PublicProductComponent } from './public-products/public-product/public-product.component';
 
-import { PublicChurchProductsComponent } from './public-church-products/public-church-products.component';
 import { PrivateProductsComponent } from './private-products/private-products.component';
+import { PrivateProductComponent } from './private-products/private-product/private-product.component';
+
+import { PublicChurchProductsComponent } from './public-church-products/public-church-products.component';
 import { ProductionComponent } from './production/production.component';
 
 import { HistoryComponent } from './history/history.component';
@@ -20,8 +22,11 @@ export const routes: Routes = [
 	{ path: 'public/products', component: PublicProductsComponent },
 	{ path: 'public/products/:id', component: PublicProductComponent },
 
-	{ path: 'public/church/products', component: PublicChurchProductsComponent },
 	{ path: 'private/products', component: PrivateProductsComponent },
+	{ path: 'private/products/:id', component: PrivateProductComponent },
+
+	{ path: 'public/church/products', component: PublicChurchProductsComponent },
+	
 	{ path: 'production', component: ProductionComponent },
 
 	{ path: 'history', component: HistoryComponent },

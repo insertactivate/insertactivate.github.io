@@ -56,7 +56,7 @@ export const PRODUCTS: Product[] = [
     details: 'Längd 162 cm / 200 cm (bäddbar), sitthöjd 47 cm, djup 55 cm.',
     images: [
       {
-        path: 'assets/private-products/malin_lf.jpg',
+        path: 'assets/private-products/history/malin_lf.jpg',
         description: ''
       }
     ]
@@ -68,7 +68,7 @@ export const PRODUCTS: Product[] = [
     details: 'Längd 180 cm / 215 cm, sitthöjd 45 cm, djup 55 cm.',
     images: [
       {
-        path: 'assets/private-products/dalsjoe_sf.jpg',
+        path: 'assets/private-products/history/dalsjoe_sf.jpg',
         description: ''
       }
     ]

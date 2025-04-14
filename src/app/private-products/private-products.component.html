@@ -1,3 +1,27 @@
-<p>private-products works!</p>
+<h2>Produkter för privat miljö</h2>
+<p>
+  Kökssoffor tillverkade i utvalt massivt trä med inslag av detaljerat finsnickeriarbete.
+</p>
+<p>
+  En möbelprodukt vi valt att sälja via möbelbutiker över hela landet. Naturligtvis hjälper vi er att hitta närmsta återförsäljare. Använd kontaktformuläret <a routerLink="/contact">här</a>.
+</p>
+
+@if (privateProducts && privateProducts.length)
+{
+  @for (product of privateProducts; track product)
+  {
+    <div class="product">
+      <a routerLink="/private/products/{{ product.id }}">
+        <img src="{{ product.images[0].path }}">
+      </a>
+    </div>
+  }
+}
+@else
+{
+  <p>
+    Produktlistan tom.
+  </p>
+}
 
 <app-footer></app-footer>
