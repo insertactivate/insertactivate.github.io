@@ -1,0 +1,9 @@
+.phone a {
+  /** Remove link underline. */
+  text-decoration: none;
+}
+
+.address ul {
+  /** Remove bullets. */
+  list-style-type: none;
+}
