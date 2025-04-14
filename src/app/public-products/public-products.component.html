@@ -1,3 +1,24 @@
-<p>public-products works!</p>
+<h2>Produkter för offentlig miljö</h2>
+<p>
+  AV-möbler för konferens och presentation.
+</p>
+
+@if (publicProducts && publicProducts.length)
+{
+  @for (product of publicProducts; track product)
+  {
+    <div class="product">
+      <a routerLink="/public/products/{{ product.id }}">
+        <img src="{{ product.images[0].path }}">
+      </a>
+    </div>
+  }
+}
+@else
+{
+  <div>
+    Produktlistan tom.
+  </div>
+}
 
 <app-footer></app-footer>
