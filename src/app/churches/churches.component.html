@@ -1,1 +1,26 @@
-<p>churches works!</p>
+@if (churches && churches.length)
+{
+  <ul class="churches">
+
+    @for (church of churches; track church)
+    {
+      <li>
+        <a routerLink="/churches/{{ church.location.toLowerCase() }}/{{ church.name.toLowerCase() }}">
+        {{ church.name }}, {{ church.location }}
+        </a>
+
+        @if (church.images.length > 0)
+        {
+          <img src="assets/ic_camera_alt_black_24px.svg">
+        }
+    </li>      
+    }
+
+  </ul>
+}
+@else
+{
+  <p>
+    Referenslistan tom.
+  </p> 
+}

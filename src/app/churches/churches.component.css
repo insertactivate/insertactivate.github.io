@@ -1,0 +1,12 @@
+.churches {
+  list-style-type: circle;
+}
+
+.churches li {
+  cursor: pointer;
+}
+
+.churches img {
+  width: 15px;
+  padding-left: 5px;
+}

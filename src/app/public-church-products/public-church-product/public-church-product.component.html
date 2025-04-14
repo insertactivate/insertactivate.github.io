@@ -1,0 +1,35 @@
+@if (publicChurchProduct)
+{
+  <div>
+    <h2>
+      {{ publicChurchProduct.product }}
+    </h2>
+
+    <p>
+      {{ publicChurchProduct.description }}
+    </p>
+
+    @for (image of publicChurchProduct.images; track image)
+    {
+      <div class="product">
+        <img src="{{ image.path }}">
+        <p>
+          {{ image.description }}
+        </p>
+      </div>
+    }
+
+    <p>
+      {{ publicChurchProduct.details }}
+    </p>
+  </div>
+}
+@else
+{
+  <div>
+    <h2></h2>
+    Produktinformation saknas.
+  </div>
+}
+
+<app-footer></app-footer>

@@ -9,6 +9,8 @@ import { PrivateProductsComponent } from './private-products/private-products.co
 import { PrivateProductComponent } from './private-products/private-product/private-product.component';
 
 import { PublicChurchProductsComponent } from './public-church-products/public-church-products.component';
+import { PublicChurchProductComponent } from './public-church-products/public-church-product/public-church-product.component';
+
 import { ProductionComponent } from './production/production.component';
 
 import { HistoryProductsComponent } from './history-products/history-products.component';
@@ -28,6 +30,7 @@ export const routes: Routes = [
 	{ path: 'private/products/:id', component: PrivateProductComponent },
 
 	{ path: 'public/church/products', component: PublicChurchProductsComponent },
+	{ path: 'public/church/products/:id', component: PublicChurchProductComponent },
 	
 	{ path: 'production', component: ProductionComponent },
 

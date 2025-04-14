@@ -1,3 +1,30 @@
-<p>public-church-products works!</p>
+<h2>Produkter för offentlig miljö - Kyrka</h2>
+<p>
+  Med mer än fyrtio års samlad erfarenhet som leverantör inom offentlig inredning och specialsnickerier till kyrkor (tillverkning av kyrkbänkar, altar, etc) har vi ett unikt hantverkskunnande och en mycket hög kompetens inom området.
+</p>
+<p>
+  Att få agera leverantör till en kyrka är speciellt och något vi verkligen uppskattar.
+</p>
+
+<h3>Referenslista</h3>
+<app-churches></app-churches>
+
+@if (publicChurchProducts && publicChurchProducts.length)
+{
+  @for (product of publicChurchProducts; track product)
+  {
+    <div class="product">
+      <a routerLink="/public/church/products/{{ product.id }}">
+        <img src="{{ product.images[0].path }}">
+      </a>
+    </div>    
+  }
+}
+@else
+{
+  <p>
+    Produktlistan tom.
+  </p>
+}
 
 <app-footer></app-footer>
