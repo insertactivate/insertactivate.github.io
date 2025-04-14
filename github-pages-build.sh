@@ -6,8 +6,4 @@
 
 ng build --configuration production --aot
 
-cd docs
-cp index.html 404.html
-
-# echo 'domain.com' > CNAME
-
+cp docs/index.html docs/404.html
