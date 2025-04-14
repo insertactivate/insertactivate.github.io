@@ -1,5 +1,11 @@
 # MyApp
 
+Project for mobelman.com site.
+
+Info about cloning the project, adding / changing code, and deploying changes to github pages to have the updated site go public can be found here: https://medium.com/swlh/how-to-deploy-an-angular-app-to-github-pages-without-using-any-libraries-step-by-step-guide-cfe96fb0c879
+
+There is a build script for preparing build to GitHub Pages (before pushing using git) in the base folder. 
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
 
 ## Development server
