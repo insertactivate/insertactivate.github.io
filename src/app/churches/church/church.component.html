@@ -1,1 +1,34 @@
-<p>church works!</p>
+@if (church)
+{
+  <div>
+    <h2>
+      {{ church.name }}, {{ church.location }}
+    </h2>
+
+    <p>
+      {{ church.description }}
+    </p>
+
+    @for (image of church.images; track image)
+    {      
+      <div class="church">
+        <img src="{{ image.path }}">
+        <p>
+          {{ image.description }}
+        </p>
+      </div>
+    }
+
+    <a href="{{ church.url }}" target="_blank">{{ church.url }}</a>
+  </div>
+}
+@else
+{
+  <div>
+    <h2></h2>
+    Produktinformation saknas.
+  </div>
+}
+
+<br>
+<app-footer></app-footer>
